@@ -2,6 +2,8 @@ import Image from "./assets/react-logo.png";
 import LogoJS from "./assets/js.svg";
 
 export const App = () => {
+    const name = "Roman"
+
     return (
         <>
             <h1>React TypeScript Webpack Startet Template - {process.env.NODE_ENV} {process.env.name}</h1>
