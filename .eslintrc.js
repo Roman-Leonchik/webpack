@@ -5,11 +5,12 @@ module.exports = {
         sourceType: "module",
     },
     settings: {
-    react: {
-        version: "detect",
-    },
+        react: {
+            version: "detect",
+        },
     },
     extends: [
+        "prettier",
         "plugin:react/recommended",
         "plugin:react-hooks/recommended",
         "plugin:@typescript-eslint/recommended",
@@ -18,7 +19,6 @@ module.exports = {
         "plugin:import/typescript",
         "plugin:jsx-a11y/recommended",
         "plugin:eslint-comments/recommended",
-        "prettier/@typescript-eslint",
         "plugin:prettier/recommended",
     ],
     rules: {

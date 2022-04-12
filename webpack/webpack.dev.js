@@ -1,5 +1,5 @@
-const webpack = require("webpack");
-const ReactRefreshWebpackPlugin = require('@pmmmwh/react-refresh-webpack-plugin');
+const webpack = require("webpack")
+const ReactRefreshWebpackPlugin = require("@pmmmwh/react-refresh-webpack-plugin")
 
 module.exports = {
     mode: "development",
@@ -10,8 +10,8 @@ module.exports = {
     devtool: "cheap-module-source-map",
     plugins: [
         new webpack.DefinePlugin({
-            "process.env.name": JSON.stringify("Vishwas")
+            "process.env.name": JSON.stringify("Vishwas"),
         }),
         new ReactRefreshWebpackPlugin(),
-    ]
+    ],
 }
