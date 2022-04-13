@@ -1,14 +1,26 @@
 import React from "react"
-import { StyleSheetManager } from "styled-components"
 import { StyledGlobal } from "./styled.styled"
+import {
+    ThemeProvider as StyledThemeProvider,
+    StyleSheetManager,
+} from "styled-components"
 
-const StyledProvider: React.FC<any> = ({ children }) => {
+import { useTheme } from "../theme/theme.hooks"
+
+interface IProps {
+    children: JSX.Element
+}
+
+const StyledProvider: React.FC<IProps> = ({ children }) => {
+    const { themeProps } = useTheme()
     return (
         <StyleSheetManager>
-            <>
-                <StyledGlobal />
-                {children}
-            </>
+            <StyledThemeProvider theme={themeProps}>
+                <>
+                    <StyledGlobal />
+                    {children}
+                </>
+            </StyledThemeProvider>
         </StyleSheetManager>
     )
 }
