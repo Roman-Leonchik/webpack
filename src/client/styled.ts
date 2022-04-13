@@ -28,7 +28,7 @@ export const StyledPage = styled.div`
     position: relative;
     &:before {
         content: "";
-        background-image: url(${require("@assets/bg-blue.png")});
+        background-image: url(${require("@assets/img/bg-blue.png")});
         background-position: left bottom;
         background-repeat: repeat-x;
         background-size: 250px;

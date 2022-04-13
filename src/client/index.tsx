@@ -17,7 +17,7 @@ export const App = () => {
                         Режим разработки - <b>{process.env.NODE_ENV}</b>
                     </StyledText>
                     <StyledImage
-                        src={require("@assets/react-logo.png")}
+                        src={require("@assets/img/react-logo.png")}
                         alt="React Logo"
                         width="200"
                     />
