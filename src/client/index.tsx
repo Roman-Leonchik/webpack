@@ -1,4 +1,10 @@
-import { StyledPage, StyledContainer, StyledTitle } from "./styled"
+import {
+    StyledPage,
+    StyledContainer,
+    StyledTitle,
+    StyledText,
+    StyledImage,
+} from "./styled"
 import CompositeProvider from "./providers/composite/composite.providers"
 
 export const App = () => {
@@ -6,10 +12,15 @@ export const App = () => {
         <CompositeProvider>
             <StyledPage>
                 <StyledContainer>
-                    <StyledTitle>
-                        React TypeScript Webpack Startet Template -{" "}
-                        {process.env.NODE_ENV}
-                    </StyledTitle>
+                    <StyledTitle>Webpack для React</StyledTitle>
+                    <StyledText>
+                        Режим разработки - <b>{process.env.NODE_ENV}</b>
+                    </StyledText>
+                    <StyledImage
+                        src={require("@assets/react-logo.png")}
+                        alt="React Logo"
+                        width="200"
+                    />
                 </StyledContainer>
             </StyledPage>
         </CompositeProvider>

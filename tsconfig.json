@@ -16,6 +16,9 @@
         "noEmit": true,
         "jsx": "react-jsx",
         "baseUrl": "./src",
+        "paths": { 
+            "@assets": ["./src/client/assets/*"]
+        }
     },
     "include": [
         "src",

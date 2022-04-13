@@ -5,6 +5,9 @@ const CopyPlugin = require("copy-webpack-plugin")
 module.exports = {
     entry: path.resolve(__dirname, "..", "./src/index.tsx"),
     resolve: {
+        alias: {
+            "@assets": path.join(__dirname, "..", "./src/client/assets"),
+        },
         extensions: [".tsx", ".ts", ".js"],
     },
     module: {
