@@ -1,12 +1,12 @@
 <h1 align="center">Webpack</h1>
 
-<img src="./readme_assets/logo.svg" width="300" align="center">
+<p align="center"><img src="./readme_assets/logo.svg" width="300"></p>
 
-<h2 align="center"><a  href="">Demo</a></h2>
+<h2 align="center"><a href="">Demo</a></h2>
 
 ## Description
 
-<p align="center">Webpack for React/TypeScript/Styled-Component</p>
+<p>Webpack for React/TypeScript/Styled-Component</p>
 
 ## Project setup develop
 
@@ -19,4 +19,10 @@ npm start
 
 ```
 npm run build
+```
+
+## Project deploy for gh-pages
+
+```
+npm run deploy
 ```
