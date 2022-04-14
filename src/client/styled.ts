@@ -54,6 +54,7 @@ export const StyledTitle = styled.h1`
     text-align: center;
     color: ${({ theme }) => theme.dark};
 `
+
 export const StyledText = styled.p`
     font-size: 20px;
     padding: 0;
