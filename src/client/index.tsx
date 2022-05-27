@@ -1,18 +1,13 @@
-import {
-    StyledPage,
-    StyledContainer,
-    StyledTitle,
-    StyledText,
-    StyledImage,
-} from "./styled"
-import CompositeProvider from "./providers/composite/composite.providers"
+import { StyledPage, StyledContainer, StyledText, StyledImage } from "./styled";
+import { Title } from "./components/elements/title/title.elements";
+import CompositeProvider from "./providers/composite/composite.providers";
 
 export const App = () => {
     return (
         <CompositeProvider>
             <StyledPage>
                 <StyledContainer>
-                    <StyledTitle>Webpack для React</StyledTitle>
+                    <Title title="Webpack для React" />
                     <StyledText>
                         Режим разработки - <b>{process.env.NODE_ENV}</b>
                     </StyledText>
@@ -24,5 +19,5 @@ export const App = () => {
                 </StyledContainer>
             </StyledPage>
         </CompositeProvider>
-    )
-}
+    );
+};

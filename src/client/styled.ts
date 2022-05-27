@@ -1,4 +1,4 @@
-import styled, { keyframes } from "styled-components"
+import styled, { keyframes } from "styled-components";
 
 const spin = keyframes`
     0% {
@@ -20,7 +20,7 @@ const spin = keyframes`
     100% {
         transform: rotate(360deg);
     }
-`
+`;
 
 export const StyledPage = styled.div`
     padding: 70px 0 20px;
@@ -40,29 +40,22 @@ export const StyledPage = styled.div`
         transform: rotate(180deg);
         pointer-events: none;
     }
-`
+`;
 
 export const StyledContainer = styled.div`
     padding: 0 15px;
     margin: 0 auto;
     max-width: 1200px;
-`
-
-export const StyledTitle = styled.h1`
-    font-size: 40px;
-    margin: 0 0 20px;
-    text-align: center;
-    color: ${({ theme }) => theme.dark};
-`
+`;
 
 export const StyledText = styled.p`
     font-size: 20px;
     padding: 0;
     text-align: center;
-`
+`;
 
 export const StyledImage = styled.img`
     margin: 0 auto 20px;
     display: block;
     animation: 20s ${spin} linear infinite;
-`
+`;

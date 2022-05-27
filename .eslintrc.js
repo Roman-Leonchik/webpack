@@ -4,9 +4,23 @@ module.exports = {
         ecmaVersion: 2020,
         sourceType: "module",
     },
+    env: {
+        node: true,
+        jest: true,
+    },
     settings: {
         react: {
             version: "detect",
+        },
+        node: {
+            paths: "packages/*/src",
+            extensions: [".js", ".ts", ".tsx"],
+        },
+        typescript: {
+            alwaysTryTypes: true,
+            project: [
+                path.resolve(__dirname, ".tsconfig.json"),
+            ],
         },
     },
     extends: [
