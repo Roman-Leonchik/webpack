@@ -4,6 +4,10 @@ module.exports = {
         ecmaVersion: 2020,
         sourceType: "module",
     },
+    env: {
+        node: true,
+        jest: true,
+    },
     settings: {
         react: {
             version: "detect",
