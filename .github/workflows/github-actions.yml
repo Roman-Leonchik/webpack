@@ -18,5 +18,3 @@ jobs:
               run: npm run format
             - name: test project
               run: npm run test
-            - name: deploying the static website to gh-pages
-              run: npm run deploy
