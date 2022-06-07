@@ -1,9 +1,9 @@
-import React from "react"
-import StyledProvider from "../styled/styled.providers"
-import ThemeProvider from "../theme/theme.provider"
+import React from "react";
+import StyledProvider from "../styled/styled.providers";
+import ThemeProvider from "../theme/theme.provider";
 
 interface IProps {
-    children: JSX.Element
+    children: JSX.Element;
 }
 
 const CompositeProvider: React.FC<IProps> = ({ children }) => {
@@ -11,7 +11,7 @@ const CompositeProvider: React.FC<IProps> = ({ children }) => {
         <ThemeProvider>
             <StyledProvider>{children}</StyledProvider>
         </ThemeProvider>
-    )
-}
+    );
+};
 
-export default CompositeProvider
+export default CompositeProvider;

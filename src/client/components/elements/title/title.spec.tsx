@@ -7,7 +7,7 @@ describe("Logo", () => {
     });
 
     it("has title", () => {
-        render(<Title title="Title"/>);
+        render(<Title title="Title" />);
         expect(screen.getByText("Title")).toBeInTheDocument();
     });
 });

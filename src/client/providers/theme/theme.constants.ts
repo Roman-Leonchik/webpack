@@ -1,4 +1,4 @@
-import defaultTheme from "./themes/default.theme"
+import defaultTheme from "./themes/default.theme";
 
 export enum ThemeVariant {
     Default = "default",
@@ -6,6 +6,6 @@ export enum ThemeVariant {
 
 export const ThemesProps: Record<ThemeVariant, typeof defaultTheme> = {
     [ThemeVariant.Default]: defaultTheme,
-}
+};
 
-export type ThemePropsType = typeof ThemesProps[keyof typeof ThemesProps]
+export type ThemePropsType = typeof ThemesProps[keyof typeof ThemesProps];

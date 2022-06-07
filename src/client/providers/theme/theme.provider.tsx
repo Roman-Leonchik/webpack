@@ -1,26 +1,26 @@
-import React from "react"
-import { ThemeVariant, ThemesProps, ThemePropsType } from "./theme.constants"
+import React from "react";
+import { ThemeVariant, ThemesProps, ThemePropsType } from "./theme.constants";
 
 export interface ITheme {
-    themeVariant: ThemeVariant
-    themeProps: ThemePropsType
+    themeVariant: ThemeVariant;
+    themeProps: ThemePropsType;
 }
 
 interface IProps {
-    children: JSX.Element
+    children: JSX.Element;
 }
 
-export const ThemeContext = React.createContext<ITheme>(undefined as any)
+export const ThemeContext = React.createContext<ITheme>(undefined as any);
 
 const ThemeProvider: React.FC<IProps> = ({ children }) => {
-    const themeVariant = ThemeVariant.Default
-    const themeProps = ThemesProps[themeVariant]
+    const themeVariant = ThemeVariant.Default;
+    const themeProps = ThemesProps[themeVariant];
 
     return (
         <ThemeContext.Provider value={{ themeVariant, themeProps }}>
             {children}
         </ThemeContext.Provider>
-    )
-}
+    );
+};
 
-export default ThemeProvider
+export default ThemeProvider;

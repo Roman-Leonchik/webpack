@@ -1,18 +1,18 @@
-import React from "react"
-import { StyledGlobal } from "./styled.styled"
+import React from "react";
+import { StyledGlobal } from "./styled.styled";
 import {
     ThemeProvider as StyledThemeProvider,
     StyleSheetManager,
-} from "styled-components"
+} from "styled-components";
 
-import { useTheme } from "../theme/theme.hooks"
+import { useTheme } from "../theme/theme.hooks";
 
 interface IProps {
-    children: JSX.Element
+    children: JSX.Element;
 }
 
 const StyledProvider: React.FC<IProps> = ({ children }) => {
-    const { themeProps } = useTheme()
+    const { themeProps } = useTheme();
     return (
         <StyleSheetManager>
             <StyledThemeProvider theme={themeProps}>
@@ -22,7 +22,7 @@ const StyledProvider: React.FC<IProps> = ({ children }) => {
                 </>
             </StyledThemeProvider>
         </StyleSheetManager>
-    )
-}
+    );
+};
 
-export default StyledProvider
+export default StyledProvider;
