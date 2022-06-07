@@ -5,6 +5,6 @@ const theme = {
     dark: "#000",
     /*value - #eee*/
     gray: "#eee",
-}
+};
 
-export default theme
+export default theme;

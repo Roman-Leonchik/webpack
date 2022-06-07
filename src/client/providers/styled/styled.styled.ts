@@ -1,7 +1,7 @@
-import { createGlobalStyle, css } from "styled-components"
-import styledNormalize from "styled-normalize"
+import { createGlobalStyle, css } from "styled-components";
+import styledNormalize from "styled-normalize";
 // eslint-disable-next-line import/no-unresolved
-import "@assets/fonts/styled.css"
+import "@assets/fonts/styled.css";
 
 const globalStylesCss = css`
     ${styledNormalize};
@@ -15,6 +15,6 @@ const globalStylesCss = css`
         line-height: 1.2;
         font-family: "JosefinSans", sans-serif;
     }
-`
+`;
 
-export const StyledGlobal = createGlobalStyle`${globalStylesCss};`
+export const StyledGlobal = createGlobalStyle`${globalStylesCss};`;
