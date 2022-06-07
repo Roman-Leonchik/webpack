@@ -13,7 +13,7 @@
         "lint": "eslint --fix \"./src/**/*.{js,jsx,ts,tsx,json}\"",
         "format": "prettier --write \"./src/**/*.{js,jsx,ts,tsx,json,css,scss,md}\"",
         "predeploy": "npm run build",
-        "deploy": "gh-pages -d build",
+        "deploy": "git push origin `git subtree split --prefix dist master`:gh-pages --force",
         "test": "jest"
     },
     "repository": {

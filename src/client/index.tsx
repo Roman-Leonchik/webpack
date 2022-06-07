@@ -9,7 +9,7 @@ export const App = () => {
                 <StyledContainer>
                     <Title title="Webpack для React" />
                     <StyledText>
-                        Режим разработки - <b>{process.env.NODE_ENV}</b>
+                        Режим разработки проекта - <b>{process.env.NODE_ENV}</b>
                     </StyledText>
                     <StyledImage
                         src={require("@assets/img/react-logo.png")}
