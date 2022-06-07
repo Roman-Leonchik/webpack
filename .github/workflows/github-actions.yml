@@ -15,8 +15,8 @@ jobs:
             - name: install modules
               run: npm install
             - name: build project
-              tun: npm run build
+              run: npm run build
             - name: format(prettier) project
-              tun: npm run format
+              run: npm run format
             - name: test project
-              tun: npm run test
+              run: npm run test
