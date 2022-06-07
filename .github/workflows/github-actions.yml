@@ -5,10 +5,9 @@ jobs:
         runs-on: ubuntu-latest
         strategy:
             matrix:
-                node-version: [14.x]
+                node-version: [17.x]
         steps:
-            - name: Check out repository code
-              uses: actions/checkou@v3
+            - uses: actions/checkou@v3
             - name: Staring Node.js ${{ matrix.node-version }}
               uses: actions/setup-node@v3
               with:
